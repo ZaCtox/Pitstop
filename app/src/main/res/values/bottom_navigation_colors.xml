@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores para Bottom Navigation con paleta roja -->
+    <color name="bottom_nav_selected">@color/color_primary</color>
+    <color name="bottom_nav_unselected">@color/color_secondary_light</color>
+    <color name="bottom_nav_background">@color/color_surface</color>
+</resources>

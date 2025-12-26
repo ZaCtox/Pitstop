@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559061907591",
+    "project_id": "pitstop-f94cc",
+    "storage_bucket": "pitstop-f94cc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559061907591:android:974d1786842fb4c48fe022",
+        "android_client_info": {
+          "package_name": "com.example.pitstop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB90fDJToQZTd-SsFtw9o3JUwibTJqrQCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

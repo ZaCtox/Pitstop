@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_login">
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.pitstop.ui.fragments.LoginFragment"
+        android:label="Iniciar Sesión"
+        tools:layout="@layout/fragment_login">
+        
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <!-- Dashboard Fragment -->
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.pitstop.ui.fragments.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_maintenance_detail"
+            app:destination="@id/navigation_maintenance_detail">
+            <argument
+                android:name="maintenanceId"
+                app:argType="integer" />
+        </action>
+        
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_maintenance_form"
+            app:destination="@id/navigation_maintenance_form">
+            <argument
+                android:name="maintenanceId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+        </action>
+        
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_odometer_update"
+            app:destination="@id/navigation_odometer_update" />
+            
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_sensors"
+            app:destination="@id/navigation_sensors" />
+            
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_vehicles"
+            app:destination="@id/navigation_vehicles" />
+    </fragment>
+
+    <!-- Maintenance List Fragment -->
+    <fragment
+        android:id="@+id/navigation_maintenance"
+        android:name="com.example.pitstop.ui.fragments.MaintenanceListFragment"
+        android:label="Mantenimiento"
+        tools:layout="@layout/fragment_maintenance_list">
+        
+        <action
+            android:id="@+id/action_navigation_maintenance_to_navigation_maintenance_detail"
+            app:destination="@id/navigation_maintenance_detail">
+            <argument
+                android:name="maintenanceId"
+                app:argType="integer" />
+        </action>
+        
+        <action
+            android:id="@+id/action_navigation_maintenance_to_navigation_maintenance_form"
+            app:destination="@id/navigation_maintenance_form">
+            <argument
+                android:name="maintenanceId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+        </action>
+    </fragment>
+
+    <!-- Maintenance Detail Fragment -->
+    <fragment
+        android:id="@+id/navigation_maintenance_detail"
+        android:name="com.example.pitstop.ui.fragments.MaintenanceDetailFragment"
+        android:label="Detalle de Mantenimiento"
+        tools:layout="@layout/fragment_maintenance_detail">
+        <argument
+            android:name="maintenanceId"
+            app:argType="integer" />
+            
+        <action
+            android:id="@+id/action_navigation_maintenance_detail_to_navigation_maintenance_form"
+            app:destination="@id/navigation_maintenance_form">
+            <argument
+                android:name="maintenanceId"
+                app:argType="integer" />
+        </action>
+        
+        <action
+            android:id="@+id/action_navigation_maintenance_detail_to_navigation_maintenance"
+            app:destination="@id/navigation_maintenance" />
+    </fragment>
+
+    <!-- Maintenance Form Fragment -->
+    <fragment
+        android:id="@+id/navigation_maintenance_form"
+        android:name="com.example.pitstop.ui.fragments.MaintenanceFormFragment"
+        android:label="Formulario de Mantenimiento"
+        tools:layout="@layout/fragment_maintenance_form">
+        <argument
+            android:name="maintenanceId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+            
+        <action
+            android:id="@+id/action_navigation_maintenance_form_to_navigation_maintenance_detail"
+            app:destination="@id/navigation_maintenance_detail">
+            <argument
+                android:name="maintenanceId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <!-- Sensors Fragment -->
+    <fragment
+        android:id="@+id/navigation_sensors"
+        android:name="com.example.pitstop.ui.fragments.SensorsFragment"
+        android:label="Sensores"
+        tools:layout="@layout/fragment_sensors">
+        
+        <action
+            android:id="@+id/action_navigation_sensors_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <!-- Settings Fragment -->
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.pitstop.ui.fragments.SettingsFragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_settings">
+        
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+    <!-- Odometer Update Fragment -->
+    <fragment
+        android:id="@+id/navigation_odometer_update"
+        android:name="com.example.pitstop.ui.fragments.OdometerUpdateFragment"
+        android:label="Actualizar Kilometraje"
+        tools:layout="@layout/fragment_odometer_update">
+        
+        <action
+            android:id="@+id/action_navigation_odometer_update_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <!-- Vehicle Management Fragment -->
+    <fragment
+        android:id="@+id/navigation_vehicles"
+        android:name="com.example.pitstop.ui.fragments.VehicleManagementFragment"
+        android:label="Mis Vehículos"
+        tools:layout="@layout/fragment_vehicle_management">
+        
+        <action
+            android:id="@+id/action_navigation_vehicles_to_navigation_vehicle_form"
+            app:destination="@id/navigation_vehicle_form">
+            <argument
+                android:name="vehicleId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+        </action>
+        
+        <action
+            android:id="@+id/action_navigation_vehicles_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <!-- Vehicle Form Fragment -->
+    <fragment
+        android:id="@+id/navigation_vehicle_form"
+        android:name="com.example.pitstop.ui.fragments.VehicleFormFragment"
+        android:label="Formulario de Vehículo"
+        tools:layout="@layout/fragment_vehicle_form">
+        <argument
+            android:name="vehicleId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+    
+    <item
+        android:id="@+id/navigation_maintenance"
+        android:icon="@drawable/ic_maintenance"
+        android:title="Mantenimiento" />
+    
+    <item
+        android:id="@+id/navigation_vehicles"
+        android:icon="@drawable/ic_car"
+        android:title="Vehículos" />
+    
+    <item
+        android:id="@+id/navigation_sensors"
+        android:icon="@drawable/ic_sensors"
+        android:title="Sensores" />
+    
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Ajustes" />
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores base -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Paleta de rojos con tonalidades de negro - Modo nocturno -->
+    <color name="color_primary">#F44336</color>          <!-- Rojo más brillante para modo oscuro -->
+    <color name="color_primary_dark">#D32F2F</color>     <!-- Rojo principal -->
+    <color name="color_primary_light">#FFCDD2</color>    <!-- Rojo claro -->
+    <color name="color_primary_variant">#B71C1C</color>  <!-- Rojo oscuro -->
+    
+    <!-- Colores secundarios - Modo nocturno -->
+    <color name="color_secondary">#616161</color>        <!-- Gris más claro -->
+    <color name="color_secondary_dark">#424242</color>   <!-- Gris oscuro -->
+    <color name="color_secondary_light">#9E9E9E</color>  <!-- Gris claro -->
+    
+    <!-- Colores de acento -->
+    <color name="color_accent">#FF5722</color>           <!-- Rojo naranja -->
+    <color name="color_accent_dark">#E64A19</color>      <!-- Rojo naranja oscuro -->
+    
+    <!-- Colores de fondo - Modo nocturno -->
+    <color name="color_background">#121212</color>       <!-- Fondo oscuro -->
+    <color name="color_surface">#1E1E1E</color>          <!-- Superficie oscura -->
+    <color name="color_surface_dark">#000000</color>     <!-- Superficie muy oscura -->
+    
+    <!-- Colores de texto - Modo nocturno -->
+    <color name="color_on_primary">#FFFFFF</color>       <!-- Texto sobre rojo -->
+    <color name="color_on_secondary">#FFFFFF</color>     <!-- Texto sobre gris -->
+    <color name="color_on_background">#FFFFFF</color>    <!-- Texto sobre fondo oscuro -->
+    <color name="color_on_surface">#FFFFFF</color>       <!-- Texto sobre superficie oscura -->
+    
+    <!-- Colores de estado -->
+    <color name="color_error">#F44336</color>            <!-- Rojo error -->
+    <color name="color_success">#4CAF50</color>          <!-- Verde éxito -->
+    <color name="color_warning">#FF9800</color>          <!-- Naranja advertencia -->
+    <color name="color_info">#2196F3</color>             <!-- Azul información -->
+    
+    <!-- Colores de mantenimiento - Modo nocturno -->
+    <color name="maintenance_oil">#F44336</color>        <!-- Cambio de aceite -->
+    <color name="maintenance_brake">#D32F2F</color>      <!-- Frenos -->
+    <color name="maintenance_engine">#B71C1C</color>     <!-- Motor -->
+    <color name="maintenance_tire">#616161</color>       <!-- Neumáticos -->
+    <color name="maintenance_filter">#9E9E9E</color>     <!-- Filtros -->
+</resources>

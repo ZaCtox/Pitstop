@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Manifiesto de Android de Pitstop
+  - Declara permisos para internet, ubicación, cámara y notificaciones
+  - Define la actividad principal y el receiver de recordatorios
+  - Marca la cámara como característica opcional
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Configuración de la aplicación (iconos, tema, respaldo) -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pitstop"
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="31">
+        <!-- Activity principal que arranca la app -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- BroadcastReceiver para recordatorios de mantenimiento -->
+        <receiver
+            android:name=".receiver.MaintenanceReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+    <!-- Declarar que la cámara es opcional para que dispositivos sin cámara puedan instalar -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+</manifest>

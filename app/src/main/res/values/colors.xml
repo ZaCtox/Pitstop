@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores base -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Paleta de rojos con tonalidades de negro -->
+    <color name="color_primary">#D32F2F</color>          <!-- Rojo principal -->
+    <color name="color_primary_dark">#B71C1C</color>     <!-- Rojo oscuro -->
+    <color name="color_primary_light">#FFCDD2</color>    <!-- Rojo claro -->
+    <color name="color_primary_variant">#8B0000</color>  <!-- Rojo muy oscuro -->
+    
+    <!-- Colores secundarios -->
+    <color name="color_secondary">#424242</color>        <!-- Gris oscuro -->
+    <color name="color_secondary_dark">#212121</color>   <!-- Negro suave -->
+    <color name="color_secondary_light">#757575</color>  <!-- Gris medio -->
+    
+    <!-- Colores de acento -->
+    <color name="color_accent">#FF5722</color>           <!-- Rojo naranja -->
+    <color name="color_accent_dark">#E64A19</color>      <!-- Rojo naranja oscuro -->
+    
+    <!-- Colores de fondo -->
+    <color name="color_background">#FAFAFA</color>       <!-- Fondo claro -->
+    <color name="color_surface">#FFFFFF</color>          <!-- Superficie blanca -->
+    <color name="color_surface_dark">#1C1C1C</color>     <!-- Superficie oscura -->
+    
+    <!-- Colores de texto -->
+    <color name="color_on_primary">#FFFFFF</color>       <!-- Texto sobre rojo -->
+    <color name="color_on_secondary">#FFFFFF</color>     <!-- Texto sobre gris -->
+    <color name="color_on_background">#212121</color>    <!-- Texto sobre fondo -->
+    <color name="color_on_surface">#212121</color>       <!-- Texto sobre superficie -->
+    
+    <!-- Colores de estado -->
+    <color name="color_error">#F44336</color>            <!-- Rojo error -->
+    <color name="color_success">#4CAF50</color>          <!-- Verde éxito -->
+    <color name="color_warning">#FF9800</color>          <!-- Naranja advertencia -->
+    <color name="color_info">#2196F3</color>             <!-- Azul información -->
+    
+    <!-- Colores de mantenimiento -->
+    <color name="maintenance_oil">#D32F2F</color>        <!-- Cambio de aceite -->
+    <color name="maintenance_brake">#8B0000</color>      <!-- Frenos -->
+    <color name="maintenance_engine">#B71C1C</color>     <!-- Motor -->
+    <color name="maintenance_tire">#424242</color>       <!-- Neumáticos -->
+    <color name="maintenance_filter">#757575</color>     <!-- Filtros -->
+</resources>
